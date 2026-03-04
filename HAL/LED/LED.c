@@ -4,6 +4,7 @@
 void LED_Init(u8 Port, u8 Pin)
 {
     GPIO_SetPinDirection(Port, Pin, GPIO_OUTPUT);
+     GPIO_SetPinValue(Port, Pin, GPIO_LOW);
 }
 
 void LED_On(u8 Port, u8 Pin)
